@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAD DE LAURE | Boutique Officielle SODEFORCE</title>
+  <meta name="description" content="Découvrez SAD DE LAURE par SODEFORCE : vins, liqueurs et spécialités à base d'anacarde. Made in Côte d'Ivoire depuis 1999.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="site-header">
+    <nav class="container-nav">
+      <div class="logo-area">
+        <a href="#"><img src="images/logo.png" alt="SAD DE LAURE" class="logo"></a>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#propos">À Propos</a></li>
+        <li><a href="#boutique">Nos Produits</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="#panier-section" class="btn-cart">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            Panier <span id="cart-count" class="cart-badge">0</span>
+          </a>
+        </li>
+      </ul>
+      <button class="burger" id="burger-btn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Made in Côte d'Ivoire · SODEFORCE</p>
+      <h1>L'Excellence <em>au Naturel</em></h1>
+      <p class="hero-sub">Vins d'anacarde, liqueurs et spécialités premium,<br>transformés avec soin grâce à 25 ans d'expérience.</p>
+      <div class="hero-cta">
+        <a href="#boutique" class="btn-primary">Découvrir nos produits</a>
+        <a href="#propos" class="btn-ghost">Notre histoire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-bar">
+    <div class="stats-container">
+      <div class="stat-item">
+        <span class="stat-number">25+</span>
+        <span class="stat-label">Ans d'expérience</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">0</span>
+        <span class="stat-label">Déchet produit</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">100%</span>
+        <span class="stat-label">Made in Côte d'Ivoire</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">12+</span>
+        <span class="stat-label">Produits signature</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="propos" class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image">
+          <div class="img-frame">
+            <img src="images/IMAGE-SDF-001.png" alt="Expertise SODEFORCE">
+            <div class="img-badge">
+              <span>Depuis</span>
+              <strong>2022</strong>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <span class="eyebrow">Notre Histoire</span>
+          <h2>L'Art de Transformer<br><em>le Meilleur de la Nature</em></h2>
+          <p><strong>SAD DE LAURE</strong> est la marque phare de <strong>SODEFORCE</strong>, née en 2022. Derrière le projet, une expertise de plus de 25 ans dans la transformation de l'anacarde, du cacao et des fruits tropicaux.</p>
+          <p>Notre politique <strong>zéro déchet</strong> et notre engagement pour une économie circulaire font de nous un modèle de production saine, éthique et responsable.</p>
+          <a href="#boutique" class="btn-primary">Voir nos produits</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="boutique" class="shop-section">
+      <div class="container">
+        <div class="section-intro">
+          <span class="eyebrow">Boutique en ligne</span>
+          <h2>Nos Produits <em>Signature</em></h2>
+          <p class="section-sub">Chaque produit est le fruit d'un savoir-faire artisanal et d'une sélection rigoureuse des meilleures matières premières ivoiriennes.</p>
+        </div>
+
+        <div class="categories-filter">
+          <button class="filter-btn active" data-filter="tous">Tous</button>
+          <button class="filter-btn" data-filter="jus-sirops">Jus &amp; Sirops</button>
+          <button class="filter-btn" data-filter="vins-liqueurs">Vins &amp; Liqueurs</button>
+          <button class="filter-btn" data-filter="aperitifs">Apéritifs</button>
+          <button class="filter-btn" data-filter="epicerie">Épicerie</button>
+        </div>
+
+        <div class="product-grid" id="product-container">
+
+          <article class="product-card" data-category="vins-liqueurs">
+            <div class="product-img-container">
+              <img src="images/vin rouge.jpg" alt="Vin Rouge de Cajou" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>Vin Rouge de Cajou</h3>
+              <p class="desc">Un vin rouge sec à la belle profondeur aromatique, élaboré à partir de la pomme de cajou et relevé d’extraits d’hibiscus. Riche en antioxydants, il accompagne parfaitement vos repas et vos moments de partage.</p>
+              <span class="price">3 000 <small>FCFA</small></span>
+              <div class="qty-selector">
+                <label for="qty-vin_r">Qté</label>
+                <input type="number" value="1" min="1" max="99" id="qty-vin_r">
+              </div>
+              <button class="add-to-cart" data-id="vin_r" data-name="Vin Rouge de Cajou" data-price="5000">Ajouter au panier</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="vins-liqueurs">
+            <div class="product-img-container">
+              <img src="images/vin rosé.jpg" alt="Vin Rosé Moelleux" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>Vin Rosé Moelleux</h3>
+              <p class="desc">Un rosé moelleux à la fraîcheur fruitée et à l’élégance naturelle. Sa douceur en fait un compagnon idéal pour les apéritifs et les occasions conviviales.</p>
+              <span class="price">3 000 <small>FCFA</small></span>
+              <div class="qty-selector">
+                <label for="qty-vin_ro">Qté</label>
+                <input type="number" value="1" min="1" max="99" id="qty-vin_ro">
+              </div>
+              <button class="add-to-cart" data-id="vin_ro" data-name="Vin Rosé Moelleux" data-price="5000">Ajouter au panier</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="vins-liqueurs">
+            <div class="product-img-container">
+              <img src="images/BOUTEILLE-80cl-005-Liqueur-cacao-lait-600x600.jpg" alt="Liqueur Cajou au Lait" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>Liqueur Cajou au Lait</h3>
+              <p class="desc">Une liqueur onctueuse et gourmande aux notes de cacao et de cajou. Idéale pour finir un repas en douceur.</p>
+              <span class="price">5 000 <small>FCFA</small></span>
+              <div class="qty-selector">
+                <label for="qty-liq_lait">Qté</label>
+                <input type="number" value="1" min="1" max="99" id="qty-liq_lait">
+              </div>
+              <button class="add-to-cart" data-id="liq_lait" data-name="Liqueur Cajou au Lait" data-price="5000">Ajouter au panier</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="vins-liqueurs">
+            <div class="product-img-container">
+              <img src="images/BOUTEILLE-80cl-005-Liqueur-Menthe-600x600.jpg" alt="Liqueur Menthe 50cl" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>Liqueur Menthe 50 cl</h3>
+              <p class="desc">Une liqueur de pomme de cajou fortifiée à la menthe, fraîche et aromatique. Elle facilite la digestion et rafraîchit le palais.</p>
+              <span class="price">5 000 <small>FCFA</small></span>
+              <div class="qty-selector">
+                <label for="qty-liq_menthe50">Qté</label>
+                <input type="number" value="1" min="1" max="99" id="qty-liq_menthe50">
+              </div>
+              <button class="add-to-cart" data-id="liq_menthe50" data-name="Liqueur Menthe 50cl" data-price="5000">Ajouter au panier</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="vins-liqueurs">
+            <div class="product-img-container">
+              <img src="images/BOUTEILLE-80cl-005-Liqueur-clou-de-gironfle-600x600.jpg" alt="Liqueur Clou de girofle" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>Liqueur Clou de Girofle</h3>
+              <p class="desc">Une liqueur aux notes épicées et chaleureuses, parfaite en digestif. Le clou de girofle lui apporte son caractère et ses antioxydants.</p>
+              <span class="price">5 000 <small>FCFA</small></span>
+              <div class="qty-selector">
+                <label for="qty-liq_girofle">Qté</label>
+                <input type="number" value="1" min="1" max="99" id="qty-liq_girofle">
+              </div>
+              <button class="add-to-cart" data-id="liq_girofle" data-name="Liqueur Clou de Girofle" data-price="5000">Ajouter au panier</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="vins-liqueurs">
+            <div class="product-img-container">
+              <img src="images/liqueur menthe 20cl.png" alt="Liqueur Menthe 20cl" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>Liqueur Menthe 20 cl</h3>
+              <p class="desc">Format pratique. Liqueur de pomme de cajou fortifiée à la menthe.</p>
+              <span class="price">500 <small>FCFA</small></span>
+              <div class="qty-selector">
+                <label for="qty-liq_menthe20">Qté</label>
+                <input type="number" value="1" min="1" max="99" id="qty-liq_menthe20">
+              </div>
+              <button class="add-to-cart" data-id="liq_menthe20" data-name="Liqueur Menthe 20cl" data-price="500">Ajouter au panier</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="vins-liqueurs">
+            <div class="product-img-container">
+              <img src="images/liqueur cola 50cl.jpeg" alt="Liqueur Cola 50cl" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>Liqueur Cola 50 cl</h3>
+              <p class="desc">Une liqueur de pomme de cajou fortifiée à la noix de cola, au goût franc et tonique. La caféine naturelle de la cola lui donne un petit effet stimulant.</p>
+              <span class="price">5 000 <small>FCFA</small></span>
+              <div class="qty-selector">
+                <label for="qty-liq_cola50">Qté</label>
+                <input type="number" value="1" min="1" max="99" id="qty-liq_cola50">
+              </div>
+              <button class="add-to-cart" data-id="liq_cola50" data-name="Liqueur Cola 50cl" data-price="500">Ajouter au panier</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="vins-liqueurs">
+            <div class="product-img-container">
+              <img src="images/liqueur cacao 20cl.jpeg" alt="Liqueur Cacao 20cl" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>Liqueur Cacao 20 cl</h3>
+              <p class="desc">Une liqueur de pomme de cajou fortifiée au cacao, ronde et réconfortante. Un format pratique pour une dégustation gourmande.</p>
+              <span class="price">500 <small>FCFA</small></span>
+              <div class="qty-selector">
+                <label for="qty-liq_cacao20">Qté</label>
+                <input type="number" value="1" min="1" max="99" id="qty-liq_cacao20">
+              </div>
+              <button class="add-to-cart" data-id="liq_cacao20" data-name="Liqueur Cacao 20cl" data-price="500">Ajouter au panier</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="vins-liqueurs">
+            <div class="product-img-container">
+              <img src="images/liqueur cajou.jpeg" alt="Liqueur Cajou 50cl" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>Liqueur Cajou 50 cl</h3>
+              <p class="desc">L’expression la plus pure de la pomme de cajou, douce, fruitée et riche en antioxydants.</p>
+              <span class="price">5 000 <small>FCFA</small></span>
+              <div class="qty-selector">
+                <label for="qty-liq_cajou50">Qté</label>
+                <input type="number" value="1" min="1" max="99" id="qty-liq_cajou50">
+              </div>
+              <button class="add-to-cart" data-id="liq_cajou50" data-name="Liqueur Cajou 50cl" data-price="500">Ajouter au panier</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="vins-liqueurs">
+            <div class="product-img-container">
+              <img src="images/liqueur_gin_petit.jpeg" alt="Liqueur Gingembre 20cl" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>Liqueur Gingembre 20 cl</h3>
+              <p class="desc">Liqueur de pomme de cajou fortifiée au gingembre. Piquante et digeste.</p>
+              <span class="price">500 <small>FCFA</small></span>
+              <div class="qty-selector">
+                <label for="qty-liq_gingembre">Qté</label>
+                <input type="number" value="1" min="1" max="99" id="qty-liq_gingembre">
+              </div>
+              <button class="add-to-cart" data-id="liq_gingembre" data-name="Liqueur Gingembre 20cl" data-price="500">Ajouter au panier</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="vins-liqueurs">
+            <div class="product-img-container">
+              <img src="images/liqueur clou girofle 20cl.jpeg" alt="Liqueur Clou de Girofle 20cl" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>Liqueur Clou de Girofle 20 cl</h3>
+              <p class="desc">Une liqueur aux notes épicées et chaleureuses, parfaite en digestif. Le clou de girofle lui apporte son caractère et ses antioxydants.</p>
+              <span class="price">500 <small>FCFA</small></span>
+              <div class="qty-selector">
+                <label for="qty-liq_clou_girofle20">Qté</label>
+                <input type="number" value="1" min="1" max="99" id="qty-liq_clou_girofle20">
+              </div>
+              <button class="add-to-cart" data-id="liq_clou_girofle20" data-name="Liqueur Clou de Girofle 20cl" data-price="500">Ajouter au panier</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="vins-liqueurs">
+            <div class="product-img-container">
+              <img src="images/liqueur gingembre 50cl.jpeg" alt="Liqueur Gingembre 50cl" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>Liqueur Gingembre 50 cl</h3>
+              <p class="desc">Une liqueur piquante, vive et digeste, fortifiée au gingembre. Elle réchauffe et réveille les papilles.</p>
+              <span class="price">5 000 <small>FCFA</small></span>
+              <div class="qty-selector">
+                <label for="qty-liq_gingembre50">Qté</label>
+                <input type="number" value="1" min="1" max="99" id="qty-liq_gingembre50">
+              </div>
+              <button class="add-to-cart" data-id="liq_gingembre50" data-name="Liqueur Gingembre 50cl" data-price="500">Ajouter au panier</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="vins-liqueurs">
+            <div class="product-img-container">
+              <img src="images/liqueur cola 20cl.jpeg" alt="Liqueur Cola 20cl" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>Liqueur Cola 20 cl</h3>
+              <p class="desc">Une liqueur de pomme de cajou fortifiée à la noix de cola, au goût franc et tonique. La caféine naturelle de la cola lui donne un petit effet stimulant.</p>
+              <span class="price">500 <small>FCFA</small></span>
+              <div class="qty-selector">
+                <label for="qty-liq_cola20">Qté</label>
+                <input type="number" value="1" min="1" max="99" id="qty-liq_cola20">
+              </div>
+              <button class="add-to-cart" data-id="liq_cola20" data-name="Liqueur Cola 20cl" data-price="500">Ajouter au panier</button>
+            </div>
+          </article>
+ 
+          <article class="product-card" data-category="jus-sirops">
+            <div class="product-img-container">
+              <img src="images/j0us.jpg" alt="Jus de pomme de cajou" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>Jus de pomme de cajou</h3>
+              <p class="desc">Jus naturel, riche en vitamine C. Sans sucre ajouté.</p>
+              <span class="price">500 <small>FCFA</small></span>
+              <div class="qty-selector">
+                <label for="qty-jus_pomme">Qté</label>
+                <input type="number" value="1" min="1" max="99" id="qty-jus_pomme">
+              </div>
+              <button class="add-to-cart" data-id="jus_pomme" data-name="Jus de pomme de cajou" data-price="500">Ajouter au panier</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="jus-sirops">
+            <div class="product-img-container">
+              <img src="images/nectar_mangue.jpeg" alt="Nectar de mangue" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>Nectar de mangue</h3>
+              <p class="desc">Nectar rafraîchissant, à base de jus de mangue naturel.</p>
+              <span class="price">500 <small>FCFA</small></span>
+              <div class="qty-selector">
+                <label for="qty-nectar_mangue">Qté</label>
+                <input type="number" value="1" min="1" max="99" id="qty-nectar_mangue">
+              </div>
+              <button class="add-to-cart" data-id="nectar_mangue" data-name="Nectar de mangue" data-price="500">Ajouter au panier</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="jus-sirops">
+            <div class="product-img-container">
+              <img src="images/jus tamarin.jpg" alt="Cocktail tamarin souchet gingembre" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>Cocktail Tamarin · Souchet · Gingembre</h3>
+              <p class="desc">Mélange rafraîchissant aux notes acidulées et épicées.</p>
+              <span class="price">500 <small>FCFA</small></span>
+              <div class="qty-selector">
+                <label for="qty-jus_tamarin">Qté</label>
+                <input type="number" value="1" min="1" max="99" id="qty-jus_tamarin">
+              </div>
+              <button class="add-to-cart" data-id="jus_tamarin" data-name="Cocktail Tamarin Souchet Gingembre" data-price="500">Ajouter au panier</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="jus-sirops">
+            <div class="product-img-container">
+              <img src="images/jus ananas.jpeg" alt="Cocktail ananas citronelle" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>Cocktail Ananas · Citronnelle</h3>
+              <p class="desc">Alliance tropicale et fraîche. Parfait pour se désaltérer.</p>
+              <span class="price">500 <small>FCFA</small></span>
+              <div class="qty-selector">
+                <label for="qty-jus_ananas">Qté</label>
+                <input type="number" value="1" min="1" max="99" id="qty-jus_ananas">
+              </div>
+              <button class="add-to-cart" data-id="jus_ananas" data-name="Cocktail Ananas Citronnelle" data-price="500">Ajouter au panier</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="jus-sirops">
+            <div class="product-img-container">
+              <img src="images/lait d'amande .jpeg" alt="Lait d'amande" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>Lait d'amande</h3>
+              <p class="desc">Boisson végétale rafraîchissante, idéale pour les personnes intolérantes au lactose.</p>
+              <span class="price">1 500 <small>FCFA</small></span>
+              <div class="qty-selector">
+                <label for="qty-lait_amande">Qté</label>
+                <input type="number" value="1" min="1" max="99" id="qty-lait_amande">
+              </div>
+              <button class="add-to-cart" data-id="lait_amande" data-name="Lait d'amande" data-price="500">Ajouter au panier</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="epicerie">
+            <div class="product-img-container">
+              <img src="images/huile 250.jpg" alt="Huile Vierge de Cajou" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>Huile Vierge de Cajou</h3>
+              <p class="desc">Riche en oméga. Idéale en cuisine et pour les soins de la peau.</p>
+              <span class="price">2 000 <small>FCFA</small></span>
+              <div class="qty-selector">
+                <label for="qty-huile">Qté</label>
+                <input type="number" value="1" min="1" max="99" id="qty-huile">
+              </div>
+              <button class="add-to-cart" data-id="huile" data-name="Huile Vierge de Cajou" data-price="2000">Ajouter au panier</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="epicerie">
+            <div class="product-img-container">
+              <img src="images/pate d'amande.jpeg" alt="Pâte d'amande" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>Pâte d'amande</h3>
+              <p class="desc">Délicieuse pâte d'amande, idéale pour vos sauces.</p>
+              <span class="price">2 500 <small>FCFA</small></span>
+              <div class="qty-selector">
+                <label for="qty-pate_amande">Qté</label>
+                <input type="number" value="1" min="1" max="99" id="qty-pate_amande">
+              </div>
+              <button class="add-to-cart" data-id="pate_amande" data-name="Pâte d'amande" data-price="1500">Ajouter au panier</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="epicerie">
+            <div class="product-img-container">
+              <img src="images/vinaigre.jpeg" alt="Vinaigre de cidre" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>Vinaigre de cidre</h3>
+              <p class="desc">Acide et piquant, idéal pour les salades et les marinades.</p>
+              <span class="price">2 000 <small>FCFA</small></span>
+              <div class="qty-selector">
+                <label for="qty-vinaigre">Qté</label>
+                <input type="number" value="1" min="1" max="99" id="qty-vinaigre">
+              </div>
+              <button class="add-to-cart" data-id="vinaigre" data-name="Vinaigre de cidre" data-price="1000">Ajouter au panier</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="epicerie">
+            <div class="product-img-container">
+              <img src="images/Farine de d'amande de cajou.jpeg" alt="Farine d'amande de cajou" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>Farine d'amande de cajou</h3>
+              <p class="desc">Farine de d'amande de cajou, idéale pour les desserts et les préparations sucrées.</p>
+              <span class="price">1 000 <small>FCFA</small></span>
+              <div class="qty-selector">
+                <label for="qty-farine_amande">Qté</label>
+                <input type="number" value="1" min="1" max="99" id="qty-farine_amande">
+              </div>
+              <button class="add-to-cart" data-id="farine_amande" data-name="Farine d'amande de cajou" data-price="1000">Ajouter au panier</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="aperitifs">
+            <div class="product-img-container">
+              <img src="images/noix_salées.jpeg" alt="Cajou Salé" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>Noix de cajou salées</h3>
+              <p class="desc">Équilibre parfait entre croquant naturel et fine touche saline.</p>
+              <span class="price">1 000 <small>FCFA</small></span>
+              <div class="qty-selector">
+                <label for="qty-noix_s">Qté</label>
+                <input type="number" value="1" min="1" max="99" id="qty-noix_s">
+              </div>
+              <button class="add-to-cart" data-id="noix_s" data-name="Noix de cajou salées" data-price="2500">Ajouter au panier</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="aperitifs">
+            <div class="product-img-container">
+              <img src="images/amande au baobab.jpeg" alt="Amande au Baobab" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>Amande au Baobab</h3>
+              <p class="desc">Délicieuse amande au baobab.</p>
+              <span class="price">1 000 <small>FCFA</small></span>
+              <div class="qty-selector">
+                <label for="qty-amande_baobab">Qté</label>
+                <input type="number" value="1" min="1" max="99" id="qty-amande_baobab">
+              </div>
+              <button class="add-to-cart" data-id="amande_baobab" data-name="Amande au Baobab" data-price="2500">Ajouter au panier</button>
+            </div>
+          </article>
+
+           <article class="product-card" data-category="aperitifs">
+            <div class="product-img-container">
+              <img src="images/amande non salées .jpeg" alt="Amande Non Salée" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>Amande Non Salée</h3>
+              <p class="desc">Délicieuse amande non salée.</p>
+              <span class="price">1 000 <small>FCFA</small></span>
+              <div class="qty-selector">
+                <label for="qty-amande_non_s">Qté</label>
+                <input type="number" value="1" min="1" max="99" id="qty-amande_non_s">
+              </div>
+              <button class="add-to-cart" data-id="amande_non_s" data-name="Amande Non Salée" data-price="2500">Ajouter au panier</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="aperitifs">
+            <div class="product-img-container">
+              <img src="images/amande au lait.jpeg" alt="Amande au Lait" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>Amande au Lait</h3>
+              <p class="desc">Délicieuse amande au lait.</p>
+              <span class="price">1 000 <small>FCFA</small></span>
+              <div class="qty-selector">
+                <label for="qty-amande_lait">Qté</label>
+                <input type="number" value="1" min="1" max="99" id="qty-amande_lait">
+              </div>
+              <button class="add-to-cart" data-id="amande_lait" data-name="Amande au Lait" data-price="2500">Ajouter au panier</button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="panier-section" class="cart-section">
+      <div class="container">
+        <div class="cart-wrapper">
+          <div class="cart-header">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            <h2>Ma Commande</h2>
+          </div>
+
+          <div id="cart-list">
+            <div class="empty-cart">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+              <p>Votre panier est vide</p>
+              <a href="#boutique" class="btn-ghost-sm">Parcourir la boutique</a>
+            </div>
+          </div>
+
+          <div id="order-form-area" style="display:none;">
+            <div class="total-bar">
+              <span>Total à payer</span>
+              <strong><span id="total-price">0</span> <small>FCFA</small></strong>
+            </div>
+            <div class="form-container">
+              <h3>Informations de livraison</h3>
+              <div class="form-grid">
+                <div class="input-group">
+                  <label for="cust-name">Nom complet</label>
+                  <input type="text" id="cust-name" placeholder="Ex : Jean Koffi" autocomplete="name">
+                </div>
+                <div class="input-group">
+                  <label for="cust-tel">Numéro joignable</label>
+                  <input type="tel" id="cust-tel" placeholder="Ex : 0102030405" maxlength="10" pattern="[0-9]{10}" inputmode="numeric" title="10 chiffres obligatoires" autocomplete="tel">
+                  <small class="tel-hint">Exactement 10 chiffres</small>
+                </div>
+                <div class="input-group">
+                  <label for="cust-tel-confirm">Confirmer le numéro</label>
+                  <input type="tel" id="cust-tel-confirm" placeholder="Retapez le même numéro" maxlength="10" pattern="[0-9]{10}" inputmode="numeric" title="Retapez le même numéro">
+                  <small class="tel-hint">Doit être identique au premier</small>
+                </div>
+                <div class="input-group full-width">
+                  <label for="cust-loc">Ville &amp; Quartier</label>
+                  <input type="text" id="cust-loc" placeholder="Yamoussoukro, Quartier 220">
+                </div>
+              </div>
+              <button type="button" class="whatsapp-btn" id="whatsapp-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                Confirmer via WhatsApp
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer" id="contact">
+    <div class="footer-top">
+      <div class="footer-container">
+        <div class="footer-col footer-brand">
+          <img src="images/logo.png" alt="SODEFORCE" class="footer-logo">
+          <p>Transformateur durable de l'anacarde et des fruits tropicaux. Fier du Made in Côte d'Ivoire depuis 2022.</p>
+          <div class="social-links">
+            <a href="#" class="social-icon" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#propos">À propos de nous</a></li>
+            <li><a href="#boutique">Nos produits</a></li>
+            <li><a href="#panier-section">Commander</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="contact-info">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:infos@sodeforce.com">infos@sodeforce.com</a>
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Yamoussoukro, Côte d'Ivoire</span>
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.42 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.64a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>(+225) 01 03 12 12 21 / 01 01 32 32 62</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 SODEFORCE — SAD DE LAURE. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
